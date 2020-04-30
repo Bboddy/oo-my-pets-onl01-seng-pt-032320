@@ -58,4 +58,9 @@ class Owner
       name.mood = "nervous"
     end
   end
+  
+  def list_pets
+    self.cats.each {|name| name}
+    self.dogs.each {|name| name}
+  end
 end
