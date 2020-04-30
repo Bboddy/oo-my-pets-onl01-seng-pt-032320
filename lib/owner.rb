@@ -48,7 +48,14 @@ class Owner
   end
   
   def sell_pets
-    self.cats.each {|name| name.owner = nil  name.mood = "nervous"}
-    self.dogs.each {|name| name.owner = nil  name.mood = "nervous"}
+    self.cats.each do |name| 
+      name.owner = nil 
+      name.mood = "nervous"
+    end
+    
+    self.dogs.each do |name| 
+      name.owner = nil 
+      name.mood = "nervous"
+    end
   end
 end
